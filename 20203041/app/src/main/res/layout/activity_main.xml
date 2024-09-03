@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FAFAFA">
+
+    <!-- URL 입력 필드 -->
+    <EditText
+        android:id="@+id/urlInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:hint="URL을 입력하세요"
+        android:inputType="textUri"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"
+        android:fontFamily="@font/good" />
+
+    <!-- 검사 주기 설정 필드 -->
+    <EditText
+        android:id="@+id/intervalInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:hint="몇 초마다 확인하실지 입력하세요"
+        android:inputType="number"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"
+        android:fontFamily="@font/good" />
+
+    <!-- 이메일 주소 입력 필드 -->
+    <EditText
+        android:id="@+id/emailInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:hint="메일을 받으실 이메일을 입력하세요"
+        android:inputType="textEmailAddress"
+        android:padding="12dp"
+        android:background="@drawable/edit_text_background"
+        android:fontFamily="@font/good" />
+
+    <!-- 버튼 레이아웃 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:weightSum="2">
+
+        <!-- 시작 버튼 -->
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="Start"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:fontFamily="@font/good" />
+
+        <!-- 정지 버튼 -->
+        <Button
+            android:id="@+id/stopButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Stop"
+            android:backgroundTint="@color/purple_500"
+            android:textColor="#FFFFFF"
+            android:padding="12dp"
+            android:fontFamily="@font/good" />
+    </LinearLayout>
+
+</LinearLayout>
